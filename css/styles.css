@@ -15,8 +15,23 @@ button{
 	border: none;
 	width: 130px;
 }
+.lista{	background-color:black;
+	border: none;
+	width: 130px;}
 
 input{
 	display: block;
+	width: 100%;
 
+}
+
+.navbar{
+	border: none;
+	color: white;
+}
+.navbar-inverse .navbar-brand{
+	color: white;
+}
+.container-fluid{
+	background-color: #ED1B24;
 }

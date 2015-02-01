@@ -19,17 +19,27 @@
 				
 				<li class="dropdown">
 					<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Filter <span class="caret"></span></a>
-					<ul class="dropdown-menu" role="menu">
-						<li><a>Action</a></li>
-						<li><a>Another action</a></li>
-						<li><a>Something else here</a></li>
-						<li class="divider"></li>
-						<li><a>Separated link</a></li>
-					</ul>
+	         <ul class="dropdown-menu" role="menu">
+            <li><a ng-click="ordenarPor('artist.name')">Name Artits</a></li>
+            <li class="divider"></li>
+            <li><a  ng-click="ordenarPor('name')">Name Song</a></li>
+            <li class="divider"></li>
+            <li><a ng-click="ordenarPor('duration')">Duration song</a></li>
+            <li class="divider"></li>
+            <li><a ng-click="ordenarPor('playcount')"> Play Count</a></li>
+            <li class="divider"></li>
+            <li><a ng-click="ordenarPor('listeners')">Listeners</a></li>
+          </ul>
 				</li>
 				<li><a href="#/" ng-click="logOut(user)">Log out</a></li>
         		<li><a>Welcome {{currentUser.get('username')}}</a></li>
+                  <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+<input type="text" class="form-control" placeholder="search songs" ng-model="buscar">
+        </div>
+      </form>
 			</ul>
+
 		</div><!-- /.navbar-collapse -->
 		 </div>
 	</div><!-- /.container-fluid -->
@@ -40,7 +50,7 @@
   <div class="panel-heading">
     <div class="input-group">
       <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
-      <input type="text" class="form-control" placeholder="search songs" ng-model="buscar">
+      
     </div>
   </div>
   <div class="panel-body">
