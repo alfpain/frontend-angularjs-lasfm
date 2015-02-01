@@ -1,6 +1,22 @@
 .color {
 	background-color: #ED1B24;
 }
-body {
+.bob {
 	background-color: black;
+}
+
+.musicaImg {
+height: 60px;
+
+}
+
+button{
+	background-color:black;
+	border: none;
+	width: 130px;
+}
+
+input{
+	display: block;
+
 }
